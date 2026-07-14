@@ -1,0 +1,10 @@
+{
+  "name": "echonote",
+  "version": "1.0.1",
+  "private": true,
+  "description": "EchoNote - PWA sosial media dengan dukungan offline",
+  "dependencies": {
+    "firebase-admin": "^12.6.0",
+    "@netlify/functions": "^2.8.2"
+  }
+}
