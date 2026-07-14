@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Profil - EchoNote</title>
+<link rel="manifest" href="/manifest.json">
+<meta name="theme-color" content="#050505">
+<link rel="stylesheet" href="/assets/theme.css">
+<link rel="stylesheet" href="../Me-Profile/profile.css">
+</head>
+<body>
+
+<div class="app-shell">
+
+    <header class="topbar">
+        <a href="javascript:history.back()" style="font-size:18px;">←</a>
+        <h1 id="topbarTag">Profil</h1>
+        <span></span>
+    </header>
+
+    <div class="profile-banner" id="profileBanner"></div>
+
+    <div class="profile-head">
+        <img id="profileAvatar" src="/EchoNote/logo-profile-default/en.png" alt="">
+        <div class="name-row">
+            <span id="profileName">Memuat...</span>
+            <span id="verifiedBadge" class="badge hidden">✔️</span>
+        </div>
+        <span id="profileTag" class="tag">@...</span>
+        <p id="profileBio" class="bio"></p>
+        <a id="profileLink" class="link hidden" target="_blank" rel="noopener"></a>
+    </div>
+
+    <button style="margin:0 18px; width:calc(100% - 36px);" id="followBtn">
+        Ikuti
+    </button>
+
+    <div class="state-screen">
+        <p style="font-size:12px;">TODO: grid postingan user ini +
+        tombol kirim pesan (butuh cek status saling follow dulu,
+        sesuai aturan proteksi DM yang sudah disepakati).</p>
+    </div>
+
+</div>
+
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+<script src="/assets/firebase-config.js"></script>
+<script src="/assets/core.js"></script>
+<script src="others.js"></script>
+
+</body>
+</html>
