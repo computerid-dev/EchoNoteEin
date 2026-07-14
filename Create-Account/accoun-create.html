@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Setup Profil - EchoNote</title>
+<link rel="manifest" href="/manifest.json">
+<meta name="theme-color" content="#050505">
+<link rel="stylesheet" href="/assets/theme.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="auth-screen">
+
+    <div class="auth-card">
+
+        <div class="auth-logo">Setup Profil</div>
+        <p class="auth-sub">Terakhir sebelum masuk ke EchoNote</p>
+
+        <label class="section-label">Banner (16:9)</label>
+        <div class="banner-preview" id="bannerPreview">
+            <span>Ketuk untuk unggah banner</span>
+        </div>
+        <input type="file" id="bannerInput" accept="image/*" class="hidden">
+
+        <div class="avatar-row">
+            <img id="avatarPreview" src="/EchoNote/logo-profile-default/en.png" alt="Avatar">
+            <button type="button" id="avatarBtn" class="secondary">Ganti Avatar</button>
+            <input type="file" id="avatarInput" accept="image/*" class="hidden">
+        </div>
+
+        <label class="section-label">Nama (opsional)</label>
+        <input type="text" id="username" placeholder="Nama tampilan">
+
+        <label class="section-label">Tag akun</label>
+        <div class="tagname-wrap">
+            <span>@</span>
+            <input type="text" id="tagname" placeholder="tagname_kamu" required>
+        </div>
+        <div class="field-error" id="errTagname"></div>
+
+        <label class="section-label">Bio</label>
+        <textarea id="bio" rows="2">hai saya menggunakan EchoNote</textarea>
+
+        <label class="section-label">Link (opsional)</label>
+        <input type="url" id="link" placeholder="https://">
+
+        <button type="button" id="saveBtn" style="width:100%; margin-top:18px;">
+            Simpan &amp; Selesai
+        </button>
+
+    </div>
+
+</div>
+
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-storage-compat.js"></script>
+
+<script src="/assets/firebase-config.js"></script>
+<script src="/assets/core.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
