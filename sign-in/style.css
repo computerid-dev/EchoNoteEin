@@ -1,0 +1,6 @@
+/* Penyesuaian kecil khusus halaman daftar. */
+
+#signinForm{
+    display:flex;
+    flex-direction:column;
+}
