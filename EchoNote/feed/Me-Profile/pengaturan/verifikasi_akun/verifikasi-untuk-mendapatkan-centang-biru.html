@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Verifikasi Akun - EchoNote</title>
+<link rel="manifest" href="/manifest.json">
+<meta name="theme-color" content="#050505">
+<link rel="stylesheet" href="/assets/theme.css">
+<link rel="stylesheet" href="verify.css">
+</head>
+<body>
+
+<div class="app-shell">
+
+    <header class="topbar"><h1>Verifikasi Akun</h1></header>
+
+    <div class="verify-wrap">
+
+        <p class="verify-intro">
+            Dokumen kamu diproses lewat form ini (bukan chat manual)
+            dan otomatis dihapus dari sistem kami paling lambat 48 jam
+            setelah direview — lihat kebijakan lengkap di bawah.
+        </p>
+
+        <label class="section-label">Kategori</label>
+        <select id="verifyCategory">
+            <option value="individu">Individu</option>
+            <option value="bisnis">Bisnis</option>
+        </select>
+
+        <div id="individuFields">
+
+            <label class="section-label">Usia kamu</label>
+            <select id="ageRange">
+                <option value="13-17">13 - 17 tahun</option>
+                <option value="18-50">18 - 50 tahun</option>
+            </select>
+
+            <div id="birthDateWrap" class="hidden">
+                <label class="section-label">Tanggal Lahir</label>
+                <input type="date" id="birthDate">
+            </div>
+
+            <label class="section-label" id="docTypeLabel">Dokumen: KTP</label>
+
+        </div>
+
+        <div id="bisnisFields" class="hidden">
+
+            <label class="section-label">Dokumen: Sertifikat Izin Usaha</label>
+
+        </div>
+
+        <div class="upload-box" id="uploadBox">
+            <span id="uploadBoxText">Ketuk untuk unggah dokumen (JPG/PNG, maks 8MB)</span>
+        </div>
+        <input type="file" id="docInput" accept="image/*" class="hidden">
+        <div class="field-error" id="errDoc"></div>
+
+        <button type="button" id="submitVerifyBtn" style="width:100%; margin-top:16px;">
+            Kirim untuk Direview
+        </button>
+
+        <div id="statusBox" class="status-box hidden"></div>
+
+    </div>
+
+</div>
+
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+<script src="/assets/firebase-config.js"></script>
+<script src="/assets/core.js"></script>
+<script src="verify.js"></script>
+
+</body>
+</html>
