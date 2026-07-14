@@ -1,0 +1,16 @@
+# ==========================================================
+# netlify.toml
+# Konfigurasi utama Netlify untuk EchoNote
+# ==========================================================
+
+[build]
+  functions = "netlify/functions"
+
+[functions]
+  node_bundler = "esbuild"
+
+# Jadwal khusus untuk cleanup-verifications.js
+# (cron expression di dalam file-nya sendiri sudah cukup,
+#  baris ini opsional kalau mau pisahkan jadwal dari kode)
+[functions."cleanup-verifications"]
+  schedule = "*/15 * * * *"
