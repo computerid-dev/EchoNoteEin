@@ -1,0 +1,15 @@
+.settings-list{
+    padding:16px 18px;
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+
+.settings-item{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    width:100%;
+    text-align:left;
+    font-size:14px;
+}
