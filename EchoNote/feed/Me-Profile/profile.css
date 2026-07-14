@@ -1,0 +1,52 @@
+.profile-banner{
+    width:100%;
+    aspect-ratio:16/6;
+    background:var(--panel-2);
+    background-size:cover;
+    background-position:center;
+}
+
+.profile-head{
+    padding:0 18px 14px;
+    margin-top:-30px;
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+}
+
+.profile-head img{
+    width:78px;
+    height:78px;
+    border-radius:50%;
+    border:3px solid var(--bg);
+    object-fit:cover;
+    background:var(--panel-2);
+}
+
+.name-row{
+    display:flex;
+    align-items:center;
+    gap:6px;
+    margin-top:10px;
+    font-size:17px;
+    font-weight:700;
+}
+
+.badge{ font-size:14px; }
+
+.tag{
+    color:var(--muted);
+    font-size:13px;
+}
+
+.bio{
+    font-size:13px;
+    margin-top:8px;
+    color:#e6e6ea;
+}
+
+.link{
+    font-size:13px;
+    color:var(--accent-2);
+    margin-top:4px;
+}
