@@ -1,0 +1,7 @@
+/* Penyesuaian kecil khusus halaman login.
+   Sebagian besar tampilan sudah diatur di /assets/theme.css */
+
+#loginForm{
+    display:flex;
+    flex-direction:column;
+}
