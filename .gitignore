@@ -1,0 +1,7 @@
+node_modules/
+.netlify/
+*.log
+.DS_Store
+
+# JANGAN commit kalau firebase-config.js sudah diisi API key asli
+# (walau API key Firebase aman untuk publik, tetap jaga kerapian repo)
