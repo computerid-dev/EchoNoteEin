@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Offline - EchoNote</title>
+<link rel="stylesheet" href="/assets/theme.css">
+</head>
+<body>
+
+<div class="state-screen" style="min-height:100vh;">
+
+    <div class="spinner"></div>
+
+    <div class="auth-logo">EchoNote</div>
+
+    <p>Kamu sedang offline. Halaman ini akan otomatis reload
+    begitu koneksi kembali.</p>
+
+    <p style="font-size:12px;">Tetap bisa nonton video yang sudah
+    kamu simpan lewat menu "Video Offline".</p>
+
+</div>
+
+<script>
+window.addEventListener("online", () => location.reload());
+</script>
+
+</body>
+</html>
